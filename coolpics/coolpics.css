@@ -73,3 +73,33 @@ figure {
     list-style: none;
   }
 }
+
+.hide {
+  display: none;
+}
+
+.image-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 0;
+  z-index: 10;
+}
+
+.image-modal img {
+  display: block;
+  margin: 20vh auto 0;
+  width: 90%;
+  max-height: 60vh;
+}
+
+.close-viewer {
+  position: absolute;
+  top: 20vh;
+  right: 5%;
+  background: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
