@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: grid;
+  gap: 1rem;
+}
+
+form {
+  display: grid;
+  grid-template-areas:
+    "front"
+    "back"
+    "button";
+  gap: 1rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  display: grid;
+  gap: 1rem;
+}
+
+.front {
+  grid-area: front;
+  z-index: 2;
+  position: relative;
+}
+
+.back {
+  grid-area: back;
+  background-color: #ececec;
+  position: relative;
+  z-index: 1;
+}
+
+.strip {
+  background-color: #333;
+  height: 30px;
+  margin: 1rem 0;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+label {
+  display: block;
+}
+
+button {
+  grid-area: button;
+  padding: 0.75rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.errorMsg {
+  color: red;
+  font-weight: bold;
+}
